@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.FileSystemApplication;
 
 public class Main {
     static void main() {

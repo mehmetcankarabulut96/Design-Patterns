@@ -1,6 +1,6 @@
-package Proxy;
+package Proxy.FileSystemApplication;
 
-public class FileSystemProxy implements FileSystem{
+public class FileSystemProxy implements FileSystem {
 
     private final FileSystem realFileSystem;
 

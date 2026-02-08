@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.FileSystemApplication;
 
 public class GameClient {
     private final FileSystem fileSystem;

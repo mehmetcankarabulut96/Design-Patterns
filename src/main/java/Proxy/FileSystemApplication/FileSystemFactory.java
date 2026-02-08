@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.FileSystemApplication;
 
 public class FileSystemFactory {
     private final FileSystem fileSystem;
