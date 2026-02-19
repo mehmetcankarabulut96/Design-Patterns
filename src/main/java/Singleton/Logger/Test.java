@@ -1,10 +1,14 @@
 package Singleton.Logger;
 
-public class Test {
+public class Test extends Thread{
     static void main() {
-        AppLogger instance1 = AppLogger.getInstance();
-        AppLogger instance2 = AppLogger.getInstance();
+        for (int i = 0; i < 1000; i++) {
+            new Test().start();
+        }
+    }
 
-        System.out.println(instance1 == instance2);
+    public void run(){
+        AppLogger instance = AppLogger.getInstance();
+        System.out.println(instance.getName());
     }
 }
