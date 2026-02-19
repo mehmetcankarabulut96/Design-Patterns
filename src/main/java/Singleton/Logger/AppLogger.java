@@ -4,7 +4,7 @@ public class AppLogger {
 
     private static int count = 0;
     private String name;
-    private static AppLogger instance;
+    private static volatile AppLogger instance;
 
     private AppLogger(){
         this.name = "Logger" + count;
@@ -12,15 +12,17 @@ public class AppLogger {
     }
 
     public static AppLogger getInstance(){
-        synchronized (AppLogger.class){
-            if(instance == null){
-                try{
-                    Thread.sleep(10);
-                } catch (InterruptedException _){
+        if(instance == null){
+            synchronized (AppLogger.class){
+                if(instance == null){
+                    try{
+                        Thread.sleep(10);
+                    } catch (InterruptedException _){
 
+                    }
+
+                    instance = new AppLogger();
                 }
-
-                instance = new AppLogger();
             }
         }
 
