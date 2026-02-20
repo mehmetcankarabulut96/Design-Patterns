@@ -8,7 +8,7 @@ public class Test extends Thread{
     }
 
     public void run(){
-        AppLogger instance = AppLogger.getInstance();
+        BillPughLogger instance = BillPughLogger.getInstance();
         System.out.println(instance.getName());
     }
 }
