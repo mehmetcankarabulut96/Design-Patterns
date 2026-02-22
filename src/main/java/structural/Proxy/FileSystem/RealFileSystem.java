@@ -1,4 +1,4 @@
-package Proxy.FileSystemApplication;
+package structural.Proxy.FileSystem;
 
 public class RealFileSystem implements FileSystem {
     @Override

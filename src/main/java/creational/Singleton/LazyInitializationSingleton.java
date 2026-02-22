@@ -1,4 +1,4 @@
-package Singleton;
+package creational.Singleton;
 
 /**
  * Lazy initialization singleton, INSTANCE == null ile nesne ilk ihtiyaç duyulduğu anda oluşturulur, ondan sonraki isteklere aynı nesne verilir.

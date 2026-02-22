@@ -1,4 +1,4 @@
-package Singleton;
+package creational.Singleton;
 
 /**
  * Thread safe singleton,synchronized kullanılarak null kontrolü ve nesne oluşturma satırları locklanmıştır.

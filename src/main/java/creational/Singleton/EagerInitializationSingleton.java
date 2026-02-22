@@ -1,4 +1,4 @@
-package Singleton;
+package creational.Singleton;
 
 /**
  * Eager initialization singleton, uygulama çalıştığı zaman bir kez bellekte oluşturulur, getInstance ile aynı nesne verilir.

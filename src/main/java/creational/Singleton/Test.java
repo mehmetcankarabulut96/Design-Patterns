@@ -1,4 +1,4 @@
-package Singleton;
+package creational.Singleton;
 
 public class Test extends Thread{
     static void main() {
